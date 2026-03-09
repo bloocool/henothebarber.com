@@ -1,0 +1,18 @@
+/* TEAM */
+  Barber: Richard Quintero 
+  Site: yourwebsite.com 
+  Handle: @holychoppa89 / @henothebarber 
+  Location: San Antonio, TX 
+
+/* CREDITS */
+  Booking Platform: TheCut 
+  
+/* TECH STACK */
+  Hosted on: GitHub Pages 
+  Analytics: Google Analytics 4 
+  Fonts: Montserrat (Google Fonts) 
+  Icons: FontAwesome 
+  
+/* MISSION */
+  Providing premium grooming, precision fades, 
+  and elite service to every client in the chair.

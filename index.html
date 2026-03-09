@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Richard Quintero | Master Barber</title>
+
+    <meta name="description"
+        content="Book your next cut with Richard Quintero (@holychoppa89 / @henothebarber). Master Barber providing premium fades, lineups, and grooming services.">
+
+    <link rel="preload" as="image" href="assets/profile.webp">
+
+    <meta property="og:title" content="Richard Quintero: Master Barber">
+    <meta property="og:url" content="https://yourwebsite.com/">
+    <meta property="og:description" content="Master Barber specializing in precision cuts, fades, and beard sculpting.">
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css?v=1">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <div class="trust-bar">
+            <span class="trust-label">PREMIUM GROOMING SERVICES:</span>
+            <div class="marquee-container">
+                <div class="marquee-track" id="marquee-track"></div>
+            </div>
+        </div>
+
+        <header class="profile">
+            <img src="assets/profile.webp" alt="Richard Quintero, Master Barber" class="profile-pic" width="233"
+                height="234" fetchpriority="high">
+
+            <h1 style="display: flex; align-items: center; justify-content: center; gap: 10px;">
+                Richard Quintero
+            </h1>
+
+            <p class="subtitle">Master Barber | Fade Specialist</p>
+        </header>
+
+        <a href="https://app.thecut.co/barbers/richardquintero" target="_blank" rel="noopener noreferrer"
+            class="btn primary-btn">
+            <i class="fas fa-cut"></i> Book on TheCut
+        </a>
+
+        <h2 class="section-header">
+            <span><i class="fas fa-scissors"></i> Services & Info <i class="fas fa-scissors"></i></span>
+        </h2>
+
+        <a href="book.html" class="btn media-btn">
+            <i class="fas fa-list"></i> View Full Service Menu
+        </a>
+
+        <a href="https://www.tiktok.com/@henothebarber" target="_blank" rel="noopener noreferrer" class="btn media-btn">
+            <i class="fab fa-tiktok"></i> Watch Latest Cuts
+        </a>
+
+        <h2 class="section-header">
+            <span><i class="fa-solid fa-share-nodes"></i> Connect <i class="fa-solid fa-share-nodes"></i></span>
+        </h2>
+
+        <footer class="socials">
+            <a href="https://www.instagram.com/holychoppa89/" target="_blank" rel="noopener noreferrer"
+                aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@henothebarber" target="_blank" rel="noopener noreferrer"
+                aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.facebook.com/richard.quintero.340368/" target="_blank" rel="noopener noreferrer"
+                aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        </footer>
+
+        <div class="legal-footer">
+            <p>&copy; 2026 Richard Quintero. All Rights Reserved.</p>
+        </div>
+
+    </main>
+
+    <script>
+        const services = [
+            "Regular Haircuts",
+            "Haircut + Beard",
+            "Color Enhancements",
+            "Crisp Edge Ups",
+            "Kids & Senior Cuts",
+            "Eyebrow Shaping"
+        ];
+
+        const track = document.getElementById('marquee-track');
+        const mainSet = services.map(name => {
+            return `<span class="partner">${name}</span> <span class="dot">&bull;</span>`;
+        }).join('');
+        const decorativeSet = `<span aria-hidden="true" class="marquee-group">${mainSet}</span>`;
+        track.innerHTML = mainSet + decorativeSet + decorativeSet + decorativeSet;
+    </script>
+
+</body>
+
+</html>
